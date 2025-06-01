@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enter Your Name</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+    #output {
+      margin-top: 20px;
+      font-size: 20px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Enter Your Name</h2>
+
+  <!-- Input Field -->
+  <input type="text" id="nameInput" placeholder="Enter your name">
+
+  <!-- Button -->
+  <button onclick="displayName()">Submit</button>
+
+  <!-- Output Area -->
+  <div id="output"></div>
+
+  <script>
+    function displayName() {
+      // Get the value from the input
+      var name = document.getElementById("nameInput").value;
+
+      // Display it in the output div
+      document.getElementById("output").innerHTML = "Hello, " + name + "!";
+    }
+  </script>
+
+</body>
+</html>
